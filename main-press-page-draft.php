@@ -58,7 +58,7 @@ get_header('bare');
 
 				foreach ($feed->get_items() as $key => $item) {
 
-					$datelimit = time() - (6*30*24*60*60); // calcutate last 6 months
+					$datelimit = time() - (1*30*24*60*60); // calcutate last month
 
 					if ($item->get_date('U') >= $datelimit) {
 						$new[] = $item;
