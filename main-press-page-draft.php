@@ -82,24 +82,15 @@ get_header('bare');
 
 					// get permalink
 					$url = $item->get_permalink();
-					// get url path
-					$path = parse_url($url, PHP_URL_PATH);
-					// store url path name
-					$firstSubDir = explode('/', $path)[1]; // [0] is the domain [1] is the first subdirectory, etc.
-
-					// social sharing links
-					$facebook = 'http://www.facebook.com/sharer.php?u=';
-					$twitter = 'http://twitter.com/home?status';
-					$linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url=';
 					$i++;
 
 					// this code echoes out the blog category
 					// switch statement to echo category based on url path
-						switch ($firstSubDir) {
-							case 'blog': $blogCat = 'Corporate Blog'; break;
-							case 'press': $blogCat = 'Press Release'; break;
-							case 'research': $blogCat = 'Research'; break;
-							case 'blogs': $blogCat = 'Product Blog'; break;
+						switch ($url) {
+							case 'https://techcrunch.com/feed/': $blogCat = 'Tech Crunch'; break;
+							case 'https://mashable.com/rss/': $blogCat = 'Mashable'; break;
+							case 'https://gizmodo.com/rss': $blogCat = 'Gizmodo'; break;
+							case 'https://wptavern.com/feed': $blogCat = 'WP Tavern'; break;
 						}
 
 					// convert blogCat output to class
