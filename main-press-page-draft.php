@@ -46,10 +46,10 @@ get_header('bare');
 				<?php if(function_exists('fetch_feed')) {
 
 				include_once(ABSPATH . WPINC . '/feed.php'); // the file to rss feed generator
-				$feedlist = array('Corporate Blog' => 'https://techcrunch.com/feed/',
-							  'Press Release' => 'https://mashable.com/rss/',
-							  'Research' => 'https://gizmodo.com/rss',
-							  'Product Blog' => 'https://wptavern.com/feed'
+				$feedlist = array('Tech Crunch' => 'https://techcrunch.com/feed/',
+							  'Mashable' => 'https://mashable.com/rss/',
+							  'Gixmodo' => 'https://gizmodo.com/rss',
+							  'WP Tavern' => 'https://wptavern.com/feed'
 							  ); // specify the rss feeds in array
 
 
