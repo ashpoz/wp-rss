@@ -46,10 +46,10 @@ get_header('bare');
 				<?php if(function_exists('fetch_feed')) {
 
 				include_once(ABSPATH . WPINC . '/feed.php'); // the file to rss feed generator
-				$feedlist = array('Corporate Blog' => 'https://community.spiceworks.com/feed/blog/2.rss',
-							  'Press Release' => 'https://www.spiceworks.com/press/feed/',
-							  'Research' => 'https://www.spiceworks.com/research/feed/?post_type=resource-tile',
-							  'Product Blog' => 'https://community.spiceworks.com/feed/blog/3.rss'
+				$feedlist = array('Corporate Blog' => 'https://techcrunch.com/feed/',
+							  'Press Release' => 'https://mashable.com/rss/',
+							  'Research' => 'https://gizmodo.com/rss',
+							  'Product Blog' => 'https://wptavern.com/feed'
 							  ); // specify the rss feeds in array
 
 
